@@ -32,7 +32,7 @@
       </div>
 
      <img src= "https://img.buzzfeed.com/buzzfeed-static/static/2014-09/12/15/enhanced/webdr08/enhanced-29328-1410550760-9.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-    <a href="home.html" class="btn btn-info" role="button">Logout </a>
+    <a href="Logout.html" class="btn btn-info" role="button">Logout </a>
     </nav>
     </li>
     </ul>
@@ -41,10 +41,10 @@
 
 
         
-             <h1> <center> Compose a Message  </center></h1>
+             <h1> <center>  Dear Diary, Write A Message </center></h1>
           
 
-            <div id="container">
+            <div class="col-4">
            
      
 
@@ -80,12 +80,12 @@
        <div class="table-responsive mailbox-messages">
        <table class="table table-condensed table">
 
-  <tr>
+  
 
                          
           <form>
             <div class="form-group">
-              <label for="inputEmail1">To:</label>
+              <label for="inputEmail1">Recipient</label>
               
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
            
@@ -108,19 +108,45 @@
                 </div>
   
           <div class="form-group">
-            <label for="exampleInputFile">Attach A Cool File</label>
-            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+           
             
           </div>
           </form>
-          </tr>
+        
 
 
         
-        <a href="Success.html" class="btn btn-success" role="button">Send!!! </a>
-      
+    <a href="#myModal" data-backdrop="static" data-keyboard="false" class="btn btn-lg btn-primary" data-toggle="modal">Send Message</a>
+    
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h4 class="modal-title">Are you Sure You Want to Send This Message?</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>Are you sure you want to send? </br></p>
+            <p> <b>Are you positive you want to send?</br> </p>
+            <p> <b> Are you positvely sure you want to send? </br></p>
+            <p> <b>You should really send this stupid message?</br> </p>
+            <p class="text-danger">
+              <small>If You  Do Not Want to Send This Message Just Close this Werid Modal.</small>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            <a href="Success.html" class="btn btn-primary" role="button">Send Me Away </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
                         
                   </table>
               </div>
+           <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         </body>
         </html>
